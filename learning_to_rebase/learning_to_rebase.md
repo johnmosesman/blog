@@ -21,7 +21,7 @@ Now, let's say someone changes "vanilla" to "chocolate" (which is _obviously_ wr
 
 A mistake has been pushed to `master`! (oh noes)
 
-[screenshot]
+![Mistake in master](https://raw.githubusercontent.com/johnmosesman/blog/master/learning_to_rebase/mistake_in_master.png)
 
 Now this is a simple example, so you could easily change it back to "vanilla" and push to master, but in a real-world scenario, this could mean dozens of commits and files changed. Taking care of them in a one-by-one basis wouldn't be feasible.
 
