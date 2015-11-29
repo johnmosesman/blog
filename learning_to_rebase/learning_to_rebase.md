@@ -1,4 +1,4 @@
-# When Git Goes Wrong
+# Easy Uses for Git Rebase
 [Git](https://git-scm.com/) is a powerful and useful tool, but let's face it, at some point you're going to mess up. Or, if you don't, at some point someone _else_ will, and you'll have to fix it. Below is what I've learned about using rebase to fix these problems.
 
 These problems usually take the form of:
