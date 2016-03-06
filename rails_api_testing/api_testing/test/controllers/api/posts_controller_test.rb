@@ -5,6 +5,8 @@ class Api::PostsControllerTest < ActionController::TestCase
     get :index, { user_id: users(:one).id }
 
     assert_response :success
+
+    assert assigns(:posts)
     assert_equal Mime::JSON, response.content_type
 
     # Compare what the controller returned to the posts user one has.
