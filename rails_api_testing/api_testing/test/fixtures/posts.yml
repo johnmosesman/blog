@@ -1,0 +1,9 @@
+one:
+  body: 'post one body'
+  author: 'post one author'
+  user: one
+
+two:
+  body: 'post one body'
+  author: 'post one author'
+  user: two
