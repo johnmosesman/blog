@@ -4,6 +4,6 @@ one:
   user: one
 
 two:
-  body: 'post one body'
-  author: 'post one author'
+  body: 'post two body'
+  author: 'post two author'
   user: two
