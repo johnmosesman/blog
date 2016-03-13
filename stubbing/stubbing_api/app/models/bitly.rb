@@ -1,0 +1,2 @@
+class Bitly
+end
