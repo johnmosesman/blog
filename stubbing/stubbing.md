@@ -75,7 +75,7 @@ end
 
 Without stubbing, we would need to setup our fixtures in a way that we know which student was going to be returned as the "best" one. In some cases that may not be very hard, but let's say the "best" student is a combination of the highest grades, best attendance, most class participation, etc. In other words, more logic than we would want to set up and maintain through fixtures.
 
-To keep this test focused on what the `Classroom` object does with the _result_ of the `best_student_in_class` method, we can look at what we're expecting to get back, and stub the return as that. From the example above, we expect to get a `Student` object back with a property or method of `name`.
+To keep this test focused on what the `Classroom` object does with the _result_ of the `best_student_in_class` method and not _how_ that method works, we can look at what we're expecting to get back, and stub the return as that. From the example above, we expect to get a `Student` object back with a property or method of `name`.
 
 Using mocha, we can stub the return of this method as an object that also stubs the method `name`:
 
