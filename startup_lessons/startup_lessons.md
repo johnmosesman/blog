@@ -1,4 +1,3 @@
-# Things I Learned At My First Startup
 Working at a startup offers tremendous opportunities for growth and personal development. The pace, energy, and atmosphere is exciting and makes weeks and eventually months fly by. We try our best, but of course we make some mistakes (ok or a lot of mistakes).
 
 Most of us have read about the common pitfalls startups run into: hiring too soon, not validating their users' needs, investor issues, etc. Below are a few (of the many) things I learned—even though I've read and been warned about these things in the past. Sometimes you just have to learn things the hard way.
@@ -30,7 +29,7 @@ That's not to say you shouldn't do things like respond to customers, ensure code
 
 (Quote partial credit: [@ryanlabouve](https://twitter.com/RyanLaBouve))
 
-## Work smarter, not harder
+## Lesson 3: Work smarter, not harder
 
 A cliché, but soooooooo true. A friend of mine sent me [this post](https://medium.com/digital-nomad-stories/the-cult-of-work-you-never-meant-to-join-cd965fb9ea1a#.3k3vlyyxu) recently about how overworking has become a badge of honor in our culture and ultimately reduces our productivity. I highly recommend you read it.
 
@@ -68,7 +67,9 @@ In *all* of the cases where I've deathmarched, there was a simpler and better so
 
 **A deathmarch is your greatest canary in the coalmine for organizational health.**
 
-## Lesson #4: "It's only as complicated as you make it" - [@datachomp](https://twitter.com/DataChomp)
+## Lesson #4: "It's only as complicated as you make it." 
+
+(Quote via [@datachomp](https://twitter.com/DataChomp))
 
 Processes, company affairs, features, implementations—it really is only as complicated as you make it. Simple is better.
 
