@@ -2,7 +2,7 @@ Working at a startup offers tremendous opportunities for growth and personal dev
 
 Most of us have read about the common pitfalls startups run into: hiring too soon, not validating their users' needs, investor issues, etc. Below are a few (of the many) things I learned—even though I've read and been warned about these things in the past. Sometimes you just have to learn things the hard way.
 
-## Lesson #1: Don't overbuild
+## Lesson #1: Build for today, not tomorrow.
 You're an engineer. You love to build things. You love to build clever solutions to things. Here is a classic mistake:
 
 *Manager Bob:* Hey I need you to build `Some Feature`.
