@@ -6,13 +6,13 @@ In this talk he's giving a high-level overview about the benefits of using Phoen
 
 While I was watching it, there was a slide where he talked about Phoenix's MVC pattern, and he showed this image (at [26:05](https://youtu.be/3LiLjVCDEpU?t=26m5s)):
 
-![](image)
+![](phoenix_mvc.png)
 
 I noticed that the controller was the center point of the image. The controller would reach out to the "leaf" nodes—none of the leaf nodes are connected.
 
 The typical MVC diagram I'm used to seeing is more of a triangle. It usually looks something like this:
 
-![http://stackoverflow.com/questions/6873469/delphi-7-trying-to-understand-the-mvc-pattern](image)
+![http://stackoverflow.com/questions/6873469/delphi-7-trying-to-understand-the-mvc-pattern](classic_mvc.png)
 
 Here the nodes are all interconnected.
 
