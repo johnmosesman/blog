@@ -1,18 +1,16 @@
-# Rails vs Phoenix: MVC
-
 As I was beginning to read and learn about the [Elixir](http://elixir-lang.org/)/[Phoenix](http://www.phoenixframework.org/) world, I stumbled across [this talk](https://www.youtube.com/watch?v=3LiLjVCDEpU) at the Elixir Warsaw Meetup by José Valim, the creator of Elixir.
 
 In this talk he's giving a high-level overview about the benefits of using Phoenix: the productivity benefits we're accustomed to from Rails, and the performance of the underlying Erlang runtime.
 
 While I was watching it, there was a slide where he talked about Phoenix's MVC pattern, and he showed this image (at [26:05](https://youtu.be/3LiLjVCDEpU?t=26m5s)):
 
-![](phoenix_mvc.png)
+<img src="https://raw.githubusercontent.com/johnmosesman/blog/master/elixir_separation_concerns/phoenix_mvc.png" width="400" height="400">
 
 I noticed that the controller was the center point of the image. The controller would reach out to the "leaf" nodes—none of the leaf nodes are connected.
 
 The typical MVC diagram I'm used to seeing is more of a triangle. It usually looks something like this:
 
-![http://stackoverflow.com/questions/6873469/delphi-7-trying-to-understand-the-mvc-pattern](classic_mvc.png)
+<img src="https://raw.githubusercontent.com/johnmosesman/blog/master/elixir_separation_concerns/classic_mvc.png" alt="http://stackoverflow.com/questions/6873469/delphi-7-trying-to-understand-the-mvc-pattern" width="400" height="400">
 
 Here the nodes are all interconnected.
 
@@ -55,9 +53,10 @@ That model method calls another method, which calls another method, which calls 
 
 ## Read- and Maintain-ability
 
-Arugably the most difficult part of software is reading (and understanding) someone else's code, and then being able to maintain that code effectively.
+Arguably the most difficult part of software is reading (and understanding) someone else's code, and then being able to maintain that code effectively.
 
-I'm starting to think that the Phoenix pattern would be an excellent thing to bring into my Rails apps. If only the controllers produced side-effects, it would be very easy to read through the controller action and see _what actually is going to change._
+
+I'm starting to think that the Phoenix pattern would be an excellent thing to bring into my Rails apps. If only the controllers produced side-effects, it would be very easy to read through the controller action and _see what is actually going to change._
 
 If all change happens in controllers, the Rails models would become more like a functional programming language's modules—independent functions that transform data without persisting side-effects. That sounds easier to use, compose, and test.
 
