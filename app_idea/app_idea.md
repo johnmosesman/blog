@@ -1,10 +1,8 @@
-# "I have a great idea for an app."
-
 People that know me know that I build apps and do web things, and so I'm often approached with something that usually starts like, "I have a great idea for an app." Outside of being a developer or working in a development-related field, it is very difficult to know how much work it takes to build an app, what type of work it takes, and who it requires work from. That's the inspiration behind this post: to outline some basic questions and practices around "building an app." Below are my thoughts about the process of building an app, and a few key questions to ask along the way.
 
-Most of the time these conversations never lead to anything, but I enjoy talking through what could be and helping out a friend who has questions. This post outlines some key conversation points.
+Most of the time the conversations with these people never lead to anything, but I enjoy talking through what could be and helping out a friend who has questions. This post outlines some key conversation points.
 
-(Side-note: usually this blog is for developers, but this post is specifically for non-developers.)
+(Side-note: This blog is usually for developers, but this post is specifically for non-developers.)
 
 ## Step 1: The Idea
 
@@ -31,7 +29,7 @@ Ok, so you've got an idea and you're fairly confident that people will want to u
 
 ### The parts of an app
 
-When you browse through Facebook or Instagram or send a text message to your friend, you're interacting with the visual portion of the app—the thing that's on your phone—but there's a lot more going on in the background. Any app that is connected to the internet has some web component that is chugging along all day.
+When you browse through Facebook or Instagram or send a text message to your friend, you're interacting with the visual portion of the app—the thing that's on your phone—but there's a lot more going on in the background. Any app that is connected to the internet has some web component (i.e., servers) that is chugging along all day.
 
 Most apps today are really just a pretty presentation layer—they're not doing a lot of processing or computing. The app requests data (like all of your Facebook posts) and presents it to you in a nice feed, and sends data back to the server (like when you post a picture of your coffee). Most people know this, but what most people don't think about is that **mobile application development and web development are two completely different skills.**
 
@@ -59,7 +57,7 @@ An app is not something you can just start and forget. Technology requires maint
 
 ## Step 3: The Business
 
-Just important as what the app is and does is what the business is and does. In most cases you're not just building a fire-and-forget app, you're building a platform. Here are some important questions to consider:
+Just as important as what the app is and does is what the business is and does. In most cases you're not just building a fire-and-forget app, you're building a platform. Here are some important questions to consider:
 
 ### How do you make money?
 
@@ -177,7 +175,7 @@ This one I think is obvious. It's some mixture of the above two.
 
 In this next section, I'm going to illustrate a common developer position using my own life as an example.
 
-For me personally, 99.999% of the time I will not take equity. And the sole reason is by taking equity I am committing myself to putting time and energy into building the business and *personally making it a success*. If I am not willing to do that, then I am banking my success in the confidence that the other people involved will do the same.
+For me personally, 99.999% of the time I will not take equity. The reason for this is by taking equity I am committing myself to putting time and energy into building the business (not just building the app), and *personally trying to make it a success*. If I am not willing to do that, then I am banking my success in the confidence that the other people involved will do the same.
 
 Most new businesses fail (some stats say 9/10)—even those with the best intentions and efforts. I build apps for people for a living, and I get paid to do so and it lets me pay my monthly bills and live my life. If I took equity on apps I built for other people, I would be trying to build a dozen businesses at the same time right now—and spread that thin surely all would fail! Accepting equity is simply way too much risk to take on.
 
