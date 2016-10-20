@@ -4,7 +4,7 @@ Recently I was thinking back to when I first starting working with Rails, and ju
 
 ## Debugging Tips
 
-Debugging. The core of the programmer existence. Or put in less grandeur: we make a lot of mistakes. Annoying typos, silent failing errors, or just plain wrong syntax. I've come to think that the best programmers aren't those who make the least amount of mistakes, but those who are able to quickly and systemically find and fix them.
+Debugging. The core of the programmer existence. Or put in less grandeur: we make a lot of mistakes. Annoying typos, silent failing errors, or just plain wrong syntax. I've come to think that the best programmers aren't those who make the least amount of mistakes, but those who are able to quickly and systematically find and fix them.
 
 Here's a couple common debugging tips you may not be aware of:
 
@@ -81,11 +81,11 @@ I can do anything here!
 
 You can do anything inside of the pry statement that you can do inside your project at that point in time. Inspect objects, instance variables, run database queries, check session variables, etc.
 
-Rails actually automatically adds a similar gem to any new project called `byebug.` It acts similar to pry in that you can invoke a console by typing `byebug` somewhere in the code. Both gems have similar mechanics. Type `continue` to continue the execution flow, or `exit` to stop it entirely (byebug also has a short of `c` for continue).
+Rails actually automatically adds a similar gem to any new project called `byebug.` It acts similar to pry in that you can invoke a console by typing `byebug` somewhere in the code. Both gems have similar mechanics. Type `continue` to continue the execution flow, or `exit` to stop it entirely (byebug also has a shortcut of `c` for continue).
 
 Very useful stuff.
 
-#### The `better_errors` Gem
+#### The `better_errors` gem
 
 [Better Errors](https://github.com/charliesome/better_errors) is a gem that I will add to a lot of my projects. When an error occurs, it not only shows you a better representation of what and where something went wrong, but it also has an interactive console for you to poke around the state of the system when the error occurred. Rather than having to preemptively put in a `binding.pry`, Better Errors does that for you whenever an error occurs.
 
@@ -129,7 +129,7 @@ Rendered /Users/john/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4
 ...
 ```
 
-99% of the time this is not useful to you, but near the top you'll find more useful information. It will show you the type of error (500), which file it occurred in (`app/controllers/home_controller.rb`), and what line it occurred on, line three (`...home_controller.rb:3`).
+99% of the time this is not useful to you, but near the top you'll find more useful information. It will show you the type of error (500), which file it occurred in (`app/controllers/home_controller.rb`), and what line it occurred on: line three (`...home_controller.rb:3`).
 
 ```
 Started GET "/" for ::1 at 2016-10-19 22:58:56 -0500
