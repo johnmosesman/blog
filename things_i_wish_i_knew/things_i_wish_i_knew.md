@@ -85,6 +85,14 @@ Rails actually automatically adds a similar gem to any new project called `byebu
 
 Very useful stuff.
 
+#### The `better_errors` Gem
+
+[Better Errors](https://github.com/charliesome/better_errors) is a gem that I will add to a lot of my projects. When an error occurs, it not only shows you a better representation of what and where something went wrong, but it also has an interactive console for you to poke around the state of the system when the error occurred. Rather than having to preemptively put in a `binding.pry`, Better Errors does that for you whenever an error occurs.
+
+Here's an example from their github page:
+
+![Better Errors](https://raw.githubusercontent.com/johnmosesman/blog/479857af12c6bddf12b0ef64fcbc1adac7a46c61/things_i_wish_i_knew/better_errors.png)
+
 ### #3: Check the logs
 
 The logs are your friend. They catch things you didn't even know you'd need until you go searching for them. By default, when you run `rails s`, after the server starts, it will begin to print out logs as you use your webserver.
