@@ -88,7 +88,7 @@ I wouldn't say these are amazing solutions, but they are better than incorrectly
 
 ## Aliases
 
-In the course of your development you're going to type a certain set of commands repeatedly. At least for me, typing the same thing over and over again gets very annoying, but over the lifetime of your software development journey saving a few seconds here and there will actually add up to significant time saved, and it will also be less wear and tear on your hands (anyone who has dealt with carpal tunnel or similar knows it can be a serious problem for devs).
+In the course of your development you're going to type a certain set of commands repeatedly. At least for me, typing the same thing over and over again gets very annoying. Also, over the lifetime of your software development journey, saving a few seconds here and there will actually add up to significant amount of time saved. And, it will also be less wear and tear on your hands (anyone who has dealt with carpal tunnel or similar knows it can be a serious problem for devs).
 
 One way to avoid typing more than you need to is to setup aliases for commonly-used commands. For example, instead of typing `git status` or `git commit -m` dozens of times a day, I have an alias for those two (`gs` and `gm`, respectively) in my shell config file (I use bash, so this file is `.bashrc`).
 
@@ -104,7 +104,7 @@ alias prodc="heroku run rails c -r production"
 I also have a few that are things that I either can't seem to type correctly or forget what the alias is:
 
 ```
-# Always forget if it's prodlog or proglogs so why not both.zoidberg?
+# Always forget if it's prodlog or prodlog(s) so why not both.zoidberg?
 alias prodlog="heroku logs --tail -r production"
 alias prodlogs="heroku logs --tail -r production"
 
