@@ -161,6 +161,8 @@ Also, if you're able to reproduce the error on production, you can tail the logs
 
 I hope these tips will help you avoid pain and frustration throughout your dev career! If you have a favorite debugging tip I didn't mention, I'd love to hear from you via [email](mailto:johnmosesman@gmail.com?subject=Debugging tips) or on [twitter](https://twitter.com/johnmosesman). 
 
+If you'd like to read some more tips, read on to [Part 2!](http://johnmosesman.com/things-i-wish-i-knew-when-i-started-rails-part-2/)
+
 Thanks for reading!
 
 John
