@@ -28,7 +28,7 @@ config.action_mailer.smtp_settings = { :address => "localhost", :port => 1025 }
 
 You can see all of the emails sent in development appear at `http://localhost:1080`!
 
-![image here]()
+![mailcatcher](https://raw.githubusercontent.com/johnmosesman/blog/master/things_i_wish_i_knew/mailcatcher.png)
 
 ### Email previews
 
