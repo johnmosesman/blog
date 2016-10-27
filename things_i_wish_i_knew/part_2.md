@@ -39,7 +39,7 @@ Sometimes you just want to see that an email actually got sent or you just need 
 [Mailer Previews](http://guides.rubyonrails.org/action_mailer_basics.html#previewing-emails) landed in Rails 4.1, and they allow for an easy way to see mailer views, change the code, and 
 hit refresh to see it re-render. A must have for any extensive mailer building.
 
-![mailer view]()
+![password reset email](https://raw.githubusercontent.com/johnmosesman/blog/master/things_i_wish_i_knew/password_reset_email_cropped.png)
 
 ## Git and the database
 
@@ -57,7 +57,7 @@ Cool, so you make a new branch `add-age-to-user` and:
 2. Run said migration and commit the code.
 3. All is good.
 
-![image](of age)
+![add age](https://raw.githubusercontent.com/johnmosesman/blog/master/things_i_wish_i_knew/add_age.png)
 
 _"Also, we forgot to add their email. Users need an email."_
 
@@ -68,7 +68,7 @@ Ok, so you make a new branch `add-email-to-user` and do the same thing:
 
 At this point the question is usually something like, _"Why does my schema keep changing??"_
 
-![image](of email and age)
+![add email](https://raw.githubusercontent.com/johnmosesman/blog/master/things_i_wish_i_knew/extra_field.png)
 
 ### How to fix it
 
@@ -111,6 +111,8 @@ alias prodlogs="heroku logs --tail -r production"
 # I can NEVER type this correctly
 alias rbnev="rbenv"
 ```
+
+(Side-note: it's probably not a good idea to alias destructive commands. You wouldn't want a mistype or typing quickly without thinking to dump your production database or something.)
 
 If you want to view the aliases I have setup or all of my dotfiles in general, they're [on github](https://github.com/johnmosesman/dotfiles/blob/master/bashrc).
 
