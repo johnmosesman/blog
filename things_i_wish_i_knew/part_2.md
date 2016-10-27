@@ -34,7 +34,7 @@ You can see all of the emails sent in development appear at `http://localhost:10
 
 Sometimes you just want to see that an email actually got sent or you just need to click a password reset link inside of one, and MailCatcher is great for that. But if you're wanting to iterate quickly on the design and layout of an email without having to run the code to keep sending them, mailer previews are your friend.
 
-![mailer preview]()
+![user mailer preview](https://raw.githubusercontent.com/johnmosesman/blog/master/things_i_wish_i_knew/user_mailer_preview_2.png)
 
 [Mailer Previews](http://guides.rubyonrails.org/action_mailer_basics.html#previewing-emails) landed in Rails 4.1, and they allow for an easy way to see mailer views, change the code, and 
 hit refresh to see it re-render. A must have for any extensive mailer building.
