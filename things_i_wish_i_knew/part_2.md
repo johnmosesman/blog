@@ -68,7 +68,7 @@ Ok, so you make a new branch `add-email-to-user` and do the same thing:
 
 At this point the question is usually something like, _"Why does my schema keep changing??"_
 
-![add email](https://raw.githubusercontent.com/johnmosesman/blog/master/things_i_wish_i_knew/extra_field.png)
+![add email](https://raw.githubusercontent.com/johnmosesman/blog/master/things_i_wish_i_knew/extra_field_annotated.png)
 
 ### How to fix it
 
