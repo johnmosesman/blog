@@ -26,7 +26,7 @@ config.action_mailer.default_url_options = { :host => 'localhost:3000' }
 config.action_mailer.smtp_settings = { :address => "localhost", :port => 1025 }
 ```
 
-You can see all of the emails sent in development appear at `http://localhost:1080`!
+You can see all of the emails sent in development at `http://localhost:1080`!
 
 ![mailcatcher](https://raw.githubusercontent.com/johnmosesman/blog/master/things_i_wish_i_knew/mailcatcher.png)
 
@@ -49,7 +49,7 @@ One thing that I've seen trip people up is that _your database state exists outs
 
 The pattern usually plays out like this:
 
-_"We need to store the user's age."_
+> _"We need to store the user's age."_
 
 Cool, so you make a new branch `add-age-to-user` and:
 
@@ -59,7 +59,7 @@ Cool, so you make a new branch `add-age-to-user` and:
 
 ![add age](https://raw.githubusercontent.com/johnmosesman/blog/master/things_i_wish_i_knew/add_age.png)
 
-_"Also, we forgot to add their email. Users need an email."_
+> _"Also, we forgot to add their email. Users need an email."_
 
 Ok, so you make a new branch `add-email-to-user` and do the same thing:
 
@@ -72,13 +72,13 @@ At this point the question is usually something like, _"Why does my schema keep 
 
 ### How to fix it
 
-At this point I think it may be obvious that your database structure doesn't change when you change git branches, but it's a mistake I've seen bite a lot of people (including me), and hopefully the response isn't just, "Bleh I'll just commit it anyways."
+At this point I think it may be obvious that your database structure doesn't change when you change git branches, but it's something that I've seen bite a lot of people (including me), and hopefully the response isn't just, "Bleh I'll just commit it anyways."
 
 There's a couple things I do in this situation, some of which could be great and some of which are not practical depending on the scenario:
 
 1\. Ignore and avoid committing the extra schema lines (in the scenario above, don't let `age` or it's migration timestamp get committed).
 
-This works as long as your code doesn't need something that was changed in the migration (like a dropped column that your code still references). I use the free git GUI tool [GitX](http://gitx.frim.nl/) frequently, and it allows you to easily commit or discard changes to certain lines in a file.
+This works as long as your code doesn't need something that was changed in the migration (like a dropped column that your code still references). I use the free git GUI tool [GitX](http://gitx.frim.nl/) frequently (shown above), and it allows you to easily commit or discard changes to certain lines in a file.
 
 2\. Rollback the change on the other branch
 
