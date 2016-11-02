@@ -1,10 +1,6 @@
-# Postgres, JSON columns, and ActiveRecord
-
 If you've been following me on Twitter recently, you might have noticed that I have been singing the praises of Postgres' support for JSON columns. They make things that I initially thought would be complicated so so easy (and fun!).
 
-In this post we'll look at how easy it is to query JSON columns in conjunction with ActiveRecord.
-
-We're assuming you're using at least Postgres 9.3+, which has [excellent function support](https://www.postgresql.org/docs/9.6/static/functions-json.html) for JSON columns.
+In this post we'll look at how easy it is to query JSON columns in conjunction with ActiveRecord. We're assuming you are using Postgres 9.3+, which has [excellent function support](https://www.postgresql.org/docs/9.6/static/functions-json.html) for JSON columns.
 
 Let's begin!
 
@@ -14,9 +10,9 @@ Postgres supports two different types of JSON columns: `json` and `jsonb`. There
 
 > The json data type stores an exact copy of the input text, which processing functions must reparse on each execution; while jsonb data is stored in a decomposed binary format that makes it slightly slower to input due to added conversion overhead, but significantly faster to process, since no reparsing is needed. jsonb also supports indexing, which can be a significant advantage.
 
-My tl;dr from that paragraph is `json` is faster at writing, but `jsonb` is faster at reading ("significantly"—according to the docs). As a general rule your app will read more often than it writes. Also, users tend not to notice if posting their photo takes a little bit longer—but they will _definitely_ notice a slow loading feed—so the majority of the time I tend to use `jsonb` over `json` to get that fast-read bonus.
+My tl;dr from that paragraph is `json` is faster at writing, but `jsonb` is faster at reading ("significantly"—according to the docs). As a general rule your app will read more often than it writes. Also, users tend not to notice if posting their photo takes a little bit longer, but they will _definitely_ notice a slow loading feed—so the majority of the time I tend to use `jsonb` over `json` to get that fast-read bonus.
 
-Working with either type programatically is practically the same—so choose whichever type makes sense for your situation.
+Working with either type programatically is practically the same, so choose whichever type makes sense for your situation.
 
 ## Modeling Data From External Sources
 
@@ -126,7 +122,7 @@ You could query against the nested `url` attribute like so:
 Photo.where("data->'images'->'thumbnail'->>'url' = 'http://some_url.com'").first
 ```
 
-Notice we use the `->` to return objects so we can continue to search inside of them, into we get to the final result where it's ok to use `->>` to return text.
+We use the `->` operator to keep returning objects until we reach the final attribute where it's ok to use `->>` to return as text.
 
 ### Find all photos with a specific hashtag
 
@@ -136,7 +132,7 @@ Finding a specific hashtag ("pizza") is just as easy, we just need a different q
 Photo.where("data->'tags' ? :value", value: "pizza")
 ```
 
-(Side-note: You might be used to using the `?` as a placeholder for queries: `Photo.where("created_at > ?", 1.week.ago)`. In the example having two `?`'s is ambiguous, so we switch to a named parameter, `:value`.)
+(Side-note: You might be used to using the `?` as a placeholder for queries: `Photo.where("created_at > ?", 1.week.ago)`. In the example above having two `?`'s is ambiguous, so we switch to a named parameter, `:value`.)
 
 ## JSON columns play well with others (i.e., ActiveRecord)
 
@@ -175,7 +171,7 @@ Easy enough right?
 
 ## Conclusion
 
-There you have it. Postgres' amazing JSON column support makes that data blog feel like any other plain old database column. There are many more functions we didn't cover, so I encourage you to read through the [docs page](https://www.postgresql.org/docs/9.6/static/functions-json.html).
+There you have it. Postgres' amazing JSON column support makes that data blob feel like any other plain old database column. There are many more functions we didn't cover, so I encourage you to read through the [docs page](https://www.postgresql.org/docs/9.6/static/functions-json.html).
 
 If you liked this post and want more things like this, feel free to subscribe below, and [follow me](https://twitter.com/johnmosesman) on Twitter.
 
